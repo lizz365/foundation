@@ -7,7 +7,7 @@ import java.util.List;
  * @author lizz365
  */
 public class Apply {
-    List<Order> list = new ArrayList<>();
+    private List<Order> list = new ArrayList<>();
 
     public void addOrder(Order order){
         list.add(order);

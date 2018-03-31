@@ -9,7 +9,7 @@ import com.lizz.fundation.dto.UserDTO;
 public enum Singleton {
     INSTANCE;
     private UserDTO userDTO;
-    private Singleton(){
+    Singleton(){
         userDTO = new UserDTO();
         userDTO.setId(365);
         userDTO.setName("lizz");

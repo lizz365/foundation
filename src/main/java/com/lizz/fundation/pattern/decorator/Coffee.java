@@ -8,17 +8,17 @@ import java.util.Map;
  * @author lizz365
  */
 public class Coffee {
-    private Map map;
+    private Map<String,Integer> map;
     Coffee(){
 
     }
 
     public Coffee(int size){
-        map = new HashMap();
+        map = new HashMap<>();
         map.put("base",size);
     }
 
-    public Map make(){
+    public Map<String,Integer> make(){
         return this.map;
     }
 }

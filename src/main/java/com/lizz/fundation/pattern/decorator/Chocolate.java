@@ -8,17 +8,17 @@ import java.util.Map;
  * @author lizz365
  */
 public class Chocolate extends Coffee{
-    private Map map;
+    private Map<String,Integer> map;
     private Coffee coffee;
 
     public Chocolate(Coffee coffee, int size){
         this.coffee = coffee;
-        this.map = new HashMap();
+        this.map = new HashMap<>();
         this.map.put("chocolate",size);
     }
 
     @Override
-    public Map make() {
+    public Map<String,Integer> make() {
         this.map.putAll(this.coffee.make());
         return this.map;
     }
