@@ -1,5 +1,7 @@
 import com.alibaba.fastjson.JSONObject;
 import com.lizz.fundation.dto.UserDTO;
+import com.lizz.fundation.pattern.AbstractFactory.BenzFactory;
+import com.lizz.fundation.pattern.AbstractFactory.CarFactory;
 import com.lizz.fundation.pattern.Singleton;
 import com.lizz.fundation.pattern.adapter.City;
 import com.lizz.fundation.pattern.adapter.CityAdapter;
@@ -48,5 +50,10 @@ public class JUnit {
         City city1= new CityImpl();
         CityAdapter cityAdapter = new CityAdapter(city1);
         System.out.println(cityAdapter.getCityByCode("1"));
+    }
+    @Test
+    public void factoryTest(){
+        CarFactory carFactory= new BenzFactory();
+        System.out.println(carFactory.newCar().make());
     }
 }
