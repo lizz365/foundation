@@ -1,7 +1,7 @@
 import com.alibaba.fastjson.JSONObject;
 import com.lizz.fundation.dto.UserDTO;
-import com.lizz.fundation.pattern.AbstractFactory.BenzFactory;
-import com.lizz.fundation.pattern.AbstractFactory.CarFactory;
+import com.lizz.fundation.pattern.abstractFactory.BenzFactory;
+import com.lizz.fundation.pattern.abstractFactory.CarFactory;
 import com.lizz.fundation.pattern.Singleton;
 import com.lizz.fundation.pattern.adapter.City;
 import com.lizz.fundation.pattern.adapter.CityAdapter;
@@ -12,6 +12,9 @@ import com.lizz.fundation.pattern.decorator.Chocolate;
 import com.lizz.fundation.pattern.observer.Apply;
 import com.lizz.fundation.pattern.observer.UserScore;
 import com.lizz.fundation.pattern.observer.UserWallet;
+import com.lizz.fundation.pattern.proxyFactory.ProxyFactory;
+import com.lizz.fundation.pattern.proxyFactory.ReadDB;
+import com.lizz.fundation.pattern.proxyFactory.ReadDBImpl;
 import org.junit.Test;
 
 import java.util.Map;
@@ -55,5 +58,12 @@ public class JUnit {
     public void factoryTest(){
         CarFactory carFactory= new BenzFactory();
         System.out.println(carFactory.newCar().make());
+    }
+
+    @Test
+    public void PorxyTest(){
+        ReadDB readDB = new ReadDBImpl();
+        ReadDB readDB1 = (ReadDB)new ProxyFactory(readDB).getProxy();
+        System.out.println(readDB1.select());
     }
 }

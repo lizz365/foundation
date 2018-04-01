@@ -1,4 +1,4 @@
-package com.lizz.fundation.pattern.AbstractFactory;
+package com.lizz.fundation.pattern.abstractFactory;
 
 /**
  * @author lizz365
