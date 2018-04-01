@@ -22,7 +22,7 @@ import java.util.Map;
 /**
  * @author lizz365
  */
-public class JUnit {
+public class PatternTest {
     @Test
     public void singletonTest(){
         UserDTO userDTO = Singleton.INSTANCE.getUserDTO();
