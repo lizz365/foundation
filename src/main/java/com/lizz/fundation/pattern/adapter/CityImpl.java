@@ -11,6 +11,7 @@ public class CityImpl implements City {
     public CityImpl(){
         cityMap = new HashMap<>();
         cityMap.put("bj","北京");
+        cityMap.put("tj","天津");
     }
     public String getCityByCode(String code){
         return cityMap.get(code);

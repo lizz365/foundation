@@ -1,10 +1,12 @@
 package com.lizz.fundation.dto;
 
+import java.io.Serializable;
+
 /**
  * share DTO
  * @author lizz365
  */
-public class UserDTO {
+public class UserDTO implements Serializable {
     private Integer id;
     private String name;
 

@@ -41,11 +41,9 @@ public class PatternTest {
         UserWallet userWallet = new UserWallet();
         apply.addOrder(userScore);
         apply.addOrder(userWallet);
-
         apply.apply("1111");
         apply.refundMoney("2222");
     }
-
 
     @Test
     public void adapterTest(){
