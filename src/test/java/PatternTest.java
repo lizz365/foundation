@@ -16,6 +16,8 @@ import com.lizz.fundation.pattern.proxyFactory.ProxyFactory;
 import com.lizz.fundation.pattern.proxyFactory.ReadDB;
 import com.lizz.fundation.pattern.proxyFactory.ReadDBImpl;
 import org.junit.Test;
+import org.nustaq.serialization.util.FSTUtil;
+
 import java.util.Map;
 
 /**
@@ -62,5 +64,10 @@ public class PatternTest {
         ReadDB readDB = new ReadDBImpl();
         ReadDB readDB1 = (ReadDB)new ProxyFactory(readDB).getProxy();
         System.out.println(readDB1.select());
+    }
+    @Test
+    public void PorxyTest1(){
+        UserDTO userDTO1 = new UserDTO();
+
     }
 }
