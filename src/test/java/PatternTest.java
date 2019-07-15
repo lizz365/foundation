@@ -34,6 +34,7 @@ public class PatternTest {
         System.out.println(JSONObject.toJSONString(coffeeMap));
     }
 
+
     @Test
     public void observerTest(){
         Apply apply = new Apply();
