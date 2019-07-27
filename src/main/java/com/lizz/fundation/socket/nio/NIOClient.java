@@ -1,4 +1,4 @@
-package com.lizz.fundation.socket;
+package com.lizz.fundation.socket.nio;
 
 /**
  * nioSocket

@@ -1,4 +1,4 @@
-package com.lizz.fundation.socket;
+package com.lizz.fundation.socket.io;
 
 import java.io.IOException;
 import java.net.Socket;
