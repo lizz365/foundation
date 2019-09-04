@@ -14,7 +14,6 @@ public class ThreadExp {
 //          Runnable target 执行器
 //          String name,    线程名称
 //          long stackSize 线程堆栈大小
-
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
