@@ -46,13 +46,12 @@ public class CpuTree {
     static class CountSubNode implements Callable<Integer> {
         private TreeNode node;
 
-        public CountSubNode(TreeNode node) {
+        CountSubNode(TreeNode node) {
             this.node = node;
         }
 
         @Override
         public Integer call(){
-            int deep = 1;
             do {
                 //左节点不为空创建新线程计算
                 if (node.left != null) {
@@ -63,7 +62,7 @@ public class CpuTree {
                 counts.addAndGet(node.val);
                 //重置node
                 node = node.right;
-            } while (node.left != null || node != null);
+            } while (node != null || node.left != null);
             return null;
         }
     }
@@ -76,7 +75,7 @@ public class CpuTree {
         // 右节点
         TreeNode right;
 
-        public TreeNode(int x) {
+        TreeNode(int x) {
             val = x;
         }
     }
