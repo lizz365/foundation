@@ -69,13 +69,6 @@ public class ClassLoaderTesterTest {
         System.out.println("line 1.........");
         Thread thread = Thread.currentThread();
         System.out.println("Thread ClassLoader" + thread.getContextClassLoader());
-        try {
-            Context context = new InitialContext();
-            Object ds=context.lookup("java:MySqlDS"); //引用数据源
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-        System.out.println("line 2.........");
     }
 
 }
