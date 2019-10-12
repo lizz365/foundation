@@ -1,5 +1,7 @@
 package com.lizz.fundation.jdk.juc;
 
+import java.util.Vector;
+
 /**
  * Volatile
  *
