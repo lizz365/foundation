@@ -1,16 +1,7 @@
 package com.lizz.fundation.jvm;
 
-import com.lizz.fundation.socket.io.IOClient;
-import com.sun.jndi.dns.DnsName;
 import org.junit.Test;
 import sun.net.spi.nameservice.dns.DNSNameService;
-
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.xml.ws.spi.http.HttpContext;
-
-import static org.junit.Assert.*;
 
 public class ClassLoaderTesterTest {
 
