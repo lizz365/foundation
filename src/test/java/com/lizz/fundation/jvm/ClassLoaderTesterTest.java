@@ -34,7 +34,7 @@ public class ClassLoaderTesterTest {
     public void invokeClass(){
         System.out.println("line 1.........");
         try {
-            Class.forName("com.lizz.fundation.jvm.ClassLoaderTester1");
+            Class.forName("com.lizz.fundation.jvm.ClassLoaderTester");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
