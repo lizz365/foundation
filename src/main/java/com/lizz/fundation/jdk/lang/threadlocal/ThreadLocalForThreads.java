@@ -3,7 +3,7 @@ package com.lizz.fundation.jdk.lang.threadlocal;
 /**
  * @author lizz365
  */
-public class ThreadLocal1 {
+public class ThreadLocalForThreads {
     // ①通过匿名内部类覆盖ThreadLocal的initialValue()方法，指定初始值
     private static ThreadLocal<Integer> seqNum = new ThreadLocal<Integer>() {
         public Integer initialValue() {
@@ -12,7 +12,7 @@ public class ThreadLocal1 {
     };
 
     public static void main(String[] args) {
-        ThreadLocal1 sn = new ThreadLocal1();
+        ThreadLocalForThreads sn = new ThreadLocalForThreads();
         // ③ 3个线程共享sn，各自产生序列号
         TestClient t1 = new TestClient();
         TestClient t2 = new TestClient();

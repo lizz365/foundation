@@ -1,6 +1,6 @@
 package com.lizz.fundation.jvm;
 
-public class ClassLoaderTester {
+public class NewObject {
     //加载顺序1
     static{
         System.out.println("static Logging....");
@@ -10,7 +10,7 @@ public class ClassLoaderTester {
         System.out.println("structure Logging....");
     }
     //加载顺序3,new时调用
-    ClassLoaderTester(){
+    NewObject(){
         System.out.println("function Logging....");
     }
 

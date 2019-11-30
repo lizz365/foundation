@@ -1,4 +1,4 @@
-package com.lizz.fundation.leetcode;
+package com.lizz.fundation.algorithm;
 
 import java.util.HashMap;
 import java.util.HashSet;

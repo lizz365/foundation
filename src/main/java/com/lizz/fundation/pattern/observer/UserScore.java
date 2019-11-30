@@ -3,7 +3,7 @@ package com.lizz.fundation.pattern.observer;
 /**
  * @author lizz365
  */
-public class UserScore implements Order {
+public class UserScore extends Order {
     private String opStr ="退换积分";
     @Override
     public void apply(String  orderId) {

@@ -1,4 +1,4 @@
-package com.lizz.fundation.syn;
+package com.lizz.fundation.jdk.syn;
 
 /**
  * 对象锁，锁住实例化对象中所有synchronized方法

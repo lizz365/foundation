@@ -2,7 +2,6 @@ package com.lizz.fundation.junit;
 
 import org.junit.*;
 
-import static org.junit.Assert.*;
 
 public class AnnotationTest {
     @Before

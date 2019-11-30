@@ -1,4 +1,4 @@
-package com.lizz.fundation.leetcode;
+package com.lizz.fundation.algorithm;
 
 /**
  * @author lizz365

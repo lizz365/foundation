@@ -2,7 +2,7 @@ package com.lizz.fundation.pattern.template;
 
 import org.junit.Test;
 
-public class TemplateTest {
+public class Tester {
     @Test
     public void template(){
         System.out.println("Loser's life");

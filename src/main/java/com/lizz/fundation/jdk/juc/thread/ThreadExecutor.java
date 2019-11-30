@@ -60,10 +60,10 @@ public class ThreadExecutor {
                 handler);
 
 
-        Executors.newCachedThreadPool();
+//        Executors.newCachedThreadPool();
 //        Executors.newFixedThreadPool();
 //        Executors.newScheduledThreadPool();
-        Executors.newSingleThreadExecutor();
+//        Executors.newSingleThreadExecutor();
         Callable callable  = Executors.callable(new Runnable() {
             @Override
             public void run() {

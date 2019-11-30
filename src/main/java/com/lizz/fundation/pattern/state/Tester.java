@@ -2,7 +2,7 @@ package com.lizz.fundation.pattern.state;
 
 import org.junit.Test;
 
-public class StateTest {
+public class Tester {
     @Test
     public void state(){
         StateContext context = new StateContext();

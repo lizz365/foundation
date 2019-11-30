@@ -1,4 +1,4 @@
-package com.lizz.fundation.spi;
+package com.lizz.fundation.jdk.spi;
 
 public class SPIService2Impl implements SPIService {
     @Override

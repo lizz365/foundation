@@ -1,4 +1,4 @@
-package com.lizz.fundation.syn;
+package com.lizz.fundation.jdk.syn;
 
 /**
  * this 当对象代码块锁

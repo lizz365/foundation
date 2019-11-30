@@ -2,7 +2,7 @@ package com.lizz.fundation.pattern.chainOfResponsibility;
 
 import org.junit.Test;
 
-public class chainOfResponsibilityTest {
+public class Tester {
     @Test
     public void chainOfResponsibility(){
         CEOApproval ceoApproval = new CEOApproval();
