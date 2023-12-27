@@ -15,6 +15,12 @@ public class Tester {
         newObject.getClass();
         newObject.getClass().getClassLoader();
         System.out.println("line 3.........newObject =" + newObject);
+//        line 1.........
+//        line 2.........
+//        static Logging....
+//        structure Logging....
+//        function Logging....
+//        line 3.........newObject =com.lizz.fundation.jvm.NewObject@68f7aae2
     }
     @Test
     public void readStaticVar(){
@@ -23,12 +29,21 @@ public class Tester {
         System.out.println("line 2.........");
         int num = NewObject.num;
         System.out.println("line 3.........num=" + num);
+//        line 1.........
+//        line 2.........
+//        static Logging....
+//        line 3.........num=0
     }
     @Test
     public void readStaticFun(){
         System.out.println("line 1.........");
         NewObject.print();
         System.out.println("line 2.........");
+
+//        line 1.........
+//        static Logging....
+//        printing.....
+//        line 2.........
     }
     @Test
     public void invokeClass(){
@@ -39,6 +54,10 @@ public class Tester {
             e.printStackTrace();
         }
         System.out.println("line 2.........");
+
+//        line 1.........
+//        static Logging....
+//        line 2.........
     }
 
     @Test
@@ -54,6 +73,16 @@ public class Tester {
         System.out.println("DNSNameService ClassLoader is " + DNSNameService.class.getClassLoader());
         System.out.println("String ClassLoader is " + String.class.getClassLoader());
         System.out.println("line 3.........");
+
+//        line 1.........
+//        ClassLoader1 is sun.misc.Launcher$AppClassLoader@18b4aac2
+//        ClassLoader2 is sun.misc.Launcher$ExtClassLoader@21b8d17c
+//        ClassLoader3 is null
+//        line 2.........
+//        DNSNameService ClassLoader is sun.misc.Launcher$ExtClassLoader@21b8d17c
+//        String ClassLoader is null
+//        line 3.........
+
     }
     @Test
     public void  threadClassLoader(){

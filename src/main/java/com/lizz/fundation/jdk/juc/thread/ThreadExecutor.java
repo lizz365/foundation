@@ -64,12 +64,5 @@ public class ThreadExecutor {
 //        Executors.newFixedThreadPool();
 //        Executors.newScheduledThreadPool();
 //        Executors.newSingleThreadExecutor();
-        Callable callable  = Executors.callable(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
-        Callable callable1  =  Executors.privilegedCallable(callable);
     }
 }

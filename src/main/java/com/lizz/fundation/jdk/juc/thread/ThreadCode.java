@@ -10,12 +10,32 @@ import org.junit.Test;
  **/
 public class ThreadCode {
     @Test
-    public void newThread(){
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("googogo");
-            }
+    public void newThread() {
+        Thread thread = new Thread(() -> {
+            Thread t = Thread.currentThread();
+            System.out.println(t.getName() + ":googogo");
         });
+        // 设置位守护线程，默认位false
+        thread.setDaemon(true);
+        //设置线程名称
+        thread.setName("lizz-thread");
+        //中断线程
+        thread.interrupt();
+        // 抛出异常
+        thread.setUncaughtExceptionHandler((Thread t, Throwable e) -> {
+            System.out.println("throw exception");
+        });
+        // 执行线程的run方法
+        System.out.println("thread.run() begin");
+        thread.run();
+        // 启动线程
+        System.out.println("thread.start() begin");
+        thread.start();
+        // 获取线程名称
+        System.out.println("thread.getName():" + thread.getName());
+        // 线程是否中断
+        System.out.println("thread.isInterrupted():" + thread.isInterrupted());
+        // 是否位守护线程
+        System.out.println("thread.isDaemon():" + thread.isDaemon());
     }
 }

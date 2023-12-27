@@ -1,9 +1,7 @@
 package com.lizz.fundation.jdk.stream;
 
+
 import java.util.*;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.stream.Stream;
 
 /**
  * @author lizz365
